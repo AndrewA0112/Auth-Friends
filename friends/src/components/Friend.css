@@ -1,0 +1,39 @@
+.friend {
+    width: 30%;
+    border: 1px solid black;
+    box-shadow: 1px 0px;
+    margin: 20px auto;
+    padding-bottom: 15px;
+}
+
+.friend button {
+    /* background: red; */
+    border: 1px solid black;
+    background: transparent;
+    text-decoration: none;
+    color: black;
+    margin: 0px 5px;
+    background: white;
+}
+
+.friend button:hover {
+    background: #A3A3A3
+}
+
+.friend .buttonLink {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    background: lightgrey;
+    height: 50px;
+    display: flex;
+}
+
+.navbar .navbarLink {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    margin-left: 20px;
+}

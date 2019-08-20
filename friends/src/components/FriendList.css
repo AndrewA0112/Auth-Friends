@@ -1,0 +1,23 @@
+.friendList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.friendLinkInfo {
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 1px 0px;
+    margin: 20px 0px;
+}
+
+.friendLinkInfo:hover {
+    background: lightgrey;
+}
+
+.friendLink {
+    width: 30%;
+    text-decoration: none;
+    color: black;
+}

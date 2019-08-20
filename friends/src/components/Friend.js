@@ -22,6 +22,16 @@ const Friend = (props) => {
             .catch(error => console.log(error))
     }
     
+    const deleteFriend = () => {
+        axiosWithAuth()
+            .delete(`http://localhost:5000/api/friends/${friend.id}`)
+            .then(response => {
+                console.log(response)
+                props.history.push('/friends')
+            })
+            .catch(error => console.log(error))
+    }
+
     return (
         <div>
             <div className='navbar'>
@@ -32,7 +42,7 @@ const Friend = (props) => {
                 <h3>{friend.email}</h3>
                 <h3>{friend.age}</h3>
                 <button><Link className='buttonLink' to={{ pathname: `/friends/${friend.id}/update`, state: {friend: friend}}}>Update Friend</Link></button>
-                <button>Delete Friend</button>
+                <button onClick={deleteFriend}>Delete Friend</button>
             </div>
         </div>
     )
